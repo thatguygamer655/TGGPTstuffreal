@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gimmick</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <span class="mark">▶</span>
+  <span class="name">Gimmick</span>
+  <nav>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Gimmick</h1>
+  <p class="updated">A personal YouTube automation tool.</p>
+
+  <p>
+    Gimmick is a small self-hosted tool that runs on its operator's own computer. It does two things
+    for the one channel it is connected to:
+  </p>
+
+  <ul>
+    <li><strong>Daily poster</strong> — uploads one queued video per day and keeps a running day counter, for
+      "day <em>N</em> of posting this until <em>X</em>" style accounts.</li>
+    <li><strong>Comment bot</strong> — replies in character when a viewer mentions the bot by name in the
+      channel's own comment section.</li>
+  </ul>
+
+  <div class="callout">
+    <p>
+      <strong>This is not a hosted service.</strong> There is no Gimmick website that stores your data, no
+      account to sign up for, and no server operated by anyone. Each person who uses it runs their own copy
+      on their own machine and connects it to their own YouTube channel.
+    </p>
+  </div>
+
+  <h2>Google account access</h2>
+  <p>
+    Gimmick connects to YouTube through Google's standard OAuth consent flow. It never asks for or handles a
+    Google password. The access it requests is limited to uploading videos to, and reading and replying to
+    comments on, the channel of the person running it.
+  </p>
+  <p>
+    See the <a href="privacy.html">privacy policy</a> for exactly what is accessed and where it is stored.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Questions about this tool go to the operator who set up the copy you are dealing with — they control the
+    installation, the queue, and the bot's personality.
+  </p>
+</main>
+
+<footer>
+  Gimmick · <a href="privacy.html">Privacy policy</a> · <a href="terms.html">Terms of service</a>
+</footer>
+
+</body>
+</html>
