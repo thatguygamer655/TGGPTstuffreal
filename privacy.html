@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Gimmick</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <span class="mark">▶</span>
+  <span class="name">Gimmick</span>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="terms.html">Terms</a>
+  </nav>
+</header>
+
+<main>
+  <h1>Privacy Policy</h1>
+  <p class="updated">Last updated: 24 August 2026</p>
+
+  <div class="callout">
+    <p>
+      <strong>Gimmick is not a hosted service.</strong> It is a program that runs on the operator's own
+      computer. There is no Gimmick server, no database, and no company receiving your information. Nothing
+      described below is transmitted to the authors of this software.
+    </p>
+  </div>
+
+  <h2>What Gimmick accesses</h2>
+  <p>When the operator connects their Google account, Gimmick requests permission to:</p>
+  <ul>
+    <li><strong>Upload videos</strong> to the operator's own YouTube channel.</li>
+    <li><strong>Read comments</strong> on that channel's videos, including the commenter's public display
+      name and public comment text.</li>
+    <li><strong>Post replies</strong> to those comments as the channel.</li>
+    <li><strong>Read basic channel details</strong> — the channel's name, ID, and avatar — used to display
+      which account is connected and to avoid the bot replying to itself.</li>
+  </ul>
+  <p>
+    Gimmick requests no access to Gmail, Drive, Contacts, location, payment details, or any Google product
+    other than YouTube.
+  </p>
+
+  <h2>Where data is stored</h2>
+  <p>
+    Everything stays on the operator's computer, in the folder where Gimmick is installed:
+  </p>
+  <ul>
+    <li><code>state/tokens.json</code> — the Google OAuth access and refresh tokens.</li>
+    <li><code>state/commenter.json</code> — the IDs of comments already replied to, so the bot does not reply
+      twice.</li>
+    <li><code>state/poster.json</code> — which files have been posted and the current day number.</li>
+    <li><code>.env</code> — the operator's own API keys.</li>
+  </ul>
+  <p>
+    These files are never uploaded anywhere. Gimmick has no telemetry, no analytics, and no crash reporting.
+  </p>
+
+  <h2>Comment text and AI models</h2>
+  <p>
+    To write a reply, Gimmick sends the text of the comment it is replying to, the commenter's public display
+    name, and the video's title to whichever AI provider the operator has configured — for example Google
+    Gemini, OpenRouter, Anthropic, OpenAI, or a model running locally on the operator's own machine.
+  </p>
+  <p>
+    That provider's own privacy policy governs what happens to that text. Operators who prefer no third party
+    to see comment text can configure a local model, in which case nothing leaves the machine at all.
+  </p>
+  <p>
+    Only comments that mention the bot by name are sent. Comments that do not mention it are ignored and
+    never leave the machine.
+  </p>
+
+  <h2>Limited use of Google user data</h2>
+  <p>
+    Gimmick's use of information received from Google APIs adheres to the
+    <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank" rel="noreferrer">Google
+    API Services User Data Policy</a>, including its Limited Use requirements. Specifically, data obtained
+    from Google APIs is used only to provide the features described above, is never sold, is never used for
+    advertising, and is never transferred to anyone except as necessary to provide those features.
+  </p>
+
+  <h2>Data retention and deletion</h2>
+  <p>
+    The operator controls all retention. Deleting the <code>state/</code> folder removes every stored token
+    and record. Access can also be revoked at any time from
+    <a href="https://myaccount.google.com/permissions" target="_blank" rel="noreferrer">Google Account
+    permissions</a>, which immediately and permanently invalidates Gimmick's access.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    Gimmick is a developer tool and is not directed at children.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes, the date at the top of this page will change with it.
+  </p>
+
+  <h2>Contact</h2>
+  <p>
+    Enquiries should go to the operator of the specific installation you are dealing with, using the support
+    email shown on the Google consent screen when you granted access.
+  </p>
+</main>
+
+<footer>
+  Gimmick · <a href="index.html">Home</a> · <a href="terms.html">Terms of service</a>
+</footer>
+
+</body>
+</html>
